@@ -23,7 +23,8 @@
 				</div>
 				<div class="col-lg-6">
 					<p><a href = "http://lightpointdev.com" target = "_blank">LightPoint Development</a></p>
-				<p><more>A Web Development Agency focusing on helping non-profits, charities, ministries and more with their online presences.</more></p>				
+				<p><more>A Web Development Agency focusing on helping non-profits, charities, ministries and more with their online presences.</more></p>
+				<p><more>This website will also have added to it a secure CMS | Dashboard for clients to login and keep track of their projects in real time, a chatbox to communicate with the agency during business hours and an article newsfeed with relevant articles and information.</more></p>				
 				<p><a href = "http://lightningroad.org/colophon" target = "_blank">Project Colophon</a></p>
 				
 					<sm><i class="icon-tag"></i> design and development</sm></more> 
