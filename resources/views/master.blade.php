@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="pragma" content="no-cache" />
         <title>@yield('title')</title>
-        <meta name="description" content="Resume Portfolio for Jana Nash-Siegle, Web Laravel|PHP Developer">        
+        <meta name="description" content="Resume Portfolio for Jana Nash-Siegle, Web Laravel|PHP Developer">
         <meta name = "author" content = "Jana Nash-Siegle">
         <link rel="canonical" href="http://jlsdesk.com">
         <!--favicon-->
@@ -15,7 +15,7 @@
         <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/png">
         <!-- Opera Speed Dial Favicon -->
       <link rel="icon" type="image/png" href="favicon-16x16.png" />
-      
+
       <!-- Standard Favicon -->
       <link rel="icon" type="image/x-icon" href="favicon-32x32.png" />
 
@@ -38,37 +38,25 @@
       <!-- Customized and minified stylesheet from SASS -->
       <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css">
 
-      <!--Google Fonts -->
-      <link href="https://fonts.googleapis.com/css?family=Vast+Shadow" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
         <!--Necessary shims-->
         <!--[if lt IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js">
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script></script>
-        <![endif]--> 
+        <![endif]-->
             <script>
               window.Laravel = {!! json_encode([
               'csrfToken' => csrf_token(),
               ]) !!};
             </script>
         <!--Chart Script must be in head to work -->
-      <script type = "text/javascript" src = "{{ asset('/js/Chart.js') }}"></script>    
+      <script type = "text/javascript" src = "{{ asset('/js/Chart.js') }}"></script>
 </head>
-<body data-spy="scroll" data-offset="0" data-target="#nav"> 
-@include('includes.analyticstracking') 
-<!--Begin Landing Page --> 
+<body data-spy="scroll" data-offset="0" data-target="#nav">
+@include('includes.analyticstracking')
+<!--Begin Landing Page -->
  @include('includes.header')
-  
-  <div id="headerwrap">
-    <div class="container">
-      <div class="row centered">
-        <div class="col-lg-12">
-          <h1>Jana Nash-Siegle</h1>
-          <h2>Web Application Developer</h2>
-        </div><!--/.col-lg-12 -->
-      </div><!--/.row -->
-    </div><!--/.container -->
-  </div><!--/.#headerwrap -->
+
+ @include('pages.landing')
 
 <main>
 @yield('content')
@@ -80,24 +68,24 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 
-    <!-- JQuery -->    
+    <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" async="async" defer = "defer"></script>
-    
+
     <!-- Required for bootstrap tooltips -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 
     <!-- Bootstrap -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
-     
+
      <!--modernizr CDN-->
      <script src = "https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" async = "async" defer = "defer"></script>
-    
+
     <!--my javascripts | -->
     <script type = "text/javascript" src = "{{ asset('/js/app.js') }}"></script>
     <script type = "text/javascript" src = "{{ asset('/js/Chart.js') }}"></script>
     <script type = "text/javascript" src = "{{ asset('/js/smoothscroll.js') }}"></script>
-    
-   
+
+
 </body>
 </html>
