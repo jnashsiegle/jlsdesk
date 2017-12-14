@@ -66,7 +66,8 @@
 @include('includes.footer')
 
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
 
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" async="async" defer = "defer"></script>
@@ -84,8 +85,5 @@
     <!--my javascripts | -->
     <script type = "text/javascript" src = "{{ asset('/js/app.js') }}"></script>
     <script type = "text/javascript" src = "{{ asset('/js/Chart.js') }}"></script>
-    <script type = "text/javascript" src = "{{ asset('/js/smoothscroll.js') }}"></script>
-
-
 </body>
 </html>
